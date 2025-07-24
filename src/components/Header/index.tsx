@@ -1,7 +1,7 @@
 function Header() {
     return (
         <>
-            <div className="bg-black text-white p-3 flex justify-center fixed top-0 w-full z-10">
+            <div className="bg-black text-white p-3 flex justify-center w-full z-10">
                 <div className="flex flex-row w-5xl bg-black text-white flex-start justify-between">
                     <div className="flex flex-col items-center justify-center gap-2 w-36">
                         <img className="h-12 top-1 relative" src="./src/assets/header/logo.png" alt="Ginyu Forces"></img>
