@@ -11,5 +11,5 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url('./namek.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url('.namek.jpg');
 }
