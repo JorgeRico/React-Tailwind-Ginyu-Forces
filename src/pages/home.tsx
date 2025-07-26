@@ -7,7 +7,7 @@ function Home() {
         <>
             <div className="flex flex-wrap justify-center items-center w-full">
                 <div className=" flex flex-wrap items-center justify-center gap-4 px-8 w-full h-130 max-sm:hidden">
-                    <img data-id="0" src="./src/assets/ginyu-forces.png" alt="Ginyu forces main image" className="w-auto" />
+                    <img data-id="0" src="./public/assets/ginyu-forces.png" alt="Ginyu forces main image" className="w-auto" />
                     <CenterList></CenterList>
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 px-8 w-full">
