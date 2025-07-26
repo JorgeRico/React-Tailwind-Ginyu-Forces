@@ -15,7 +15,7 @@ function SmallBox({ item }: SmallBoxProps) {
         document.querySelectorAll('[data-id]').forEach(elem => {
             // reset div extra classes
             const element = elem?.querySelector(`div`);
-            element?.classList.remove("max-w-85");
+            element?.classList.remove("max-w-96");
             element?.classList.remove("max-h-60");
             element?.classList.remove("max-h-0");
             element?.classList.remove("max-w-0");
@@ -49,7 +49,7 @@ function SmallBox({ item }: SmallBoxProps) {
             element?.classList.add("border-b-3");
 
             // increase height and with on animation
-            element?.classList.add("max-w-85");
+            element?.classList.add("max-w-96");
             element?.classList.add("max-h-60");
         }, 500);
     }
