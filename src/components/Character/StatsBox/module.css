@@ -1,12 +1,17 @@
 @keyframes delayedShow {
+    from{
+        left: -300px;
+        opacity: 0;
+    }
     to {
-        visibility: visible;
+        left: 0;
+        opacity: 1;
     }
 }
 
 .delayedShow{
-    visibility: hidden;
-    animation: 0s linear 0.5s forwards delayedShow ;
+    animation: delayedShow 1s;
+    position:relative;
 }
 
 @keyframes animateright{

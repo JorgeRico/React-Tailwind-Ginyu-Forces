@@ -1,13 +1,12 @@
 import CharacterList from '../components/Character/List/SmallList'
 import CenterImageList from '../components/Character/List/CenterImageList';
 
-
 function Home() {
     return (
         <>
             <div className="flex flex-wrap justify-center items-center w-full">
-                <div className=" flex flex-wrap items-center justify-center gap-4 px-8 w-full h-130 max-sm:hidden">
-                    <img data-id="0" src="./assets/ginyu-forces.png" alt="Ginyu forces main image" className="w-auto h-130" />
+                <div className=" flex flex-wrap items-center justify-center gap-4 px-8 w-full h-130">
+                    <img data-id="0" src="./assets/ginyu-forces.png" alt="Ginyu forces main image" className="w-auto" />
                     <CenterImageList></CenterImageList>
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 px-8 w-full">
