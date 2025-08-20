@@ -11,7 +11,9 @@ function Layout({ children }: LayoutProps) {
             <main>
                 <Header />
                 <div className="bg-theme-image min-h-screen w-full flex items-center justify-center flex-col">
-                    {children}
+                    <div className="flex flex-wrap justify-center items-center w-full">
+                        {children}
+                    </div>
                 </div>
             </main>
             <Footer />

@@ -1,5 +1,6 @@
 import './module.css';
 import { NavLink } from 'react-router-dom';
+import SectionBox from './section.tsx';
 
 type Character = {
     id          : string,
@@ -25,41 +26,33 @@ function StatsBox({ item }: SmallBoxProps) {
                     <strong>i</strong>
                 </NavLink>
             </div>
-            <div className="bg-gray-400/30 text-white rounded-md px-7 overflow-hidden animateCustom border-emerald-600 border-b-3 border-t-3 max-w-96 max-h-60 max-md:hidden">
-                <div className="flex flex-wrap mt-6">
-                    <div className="flex flex-unwrap items-justify items-center capitalize text-emerald-700 font-bold w-18">
-                        <img src="./assets/balls/ball1.png" className="w-5.5 border-2 border-amber-500 rounded-full mt-0.5 mr-2"></img>
-                        <span className="w-20">Name:</span>
-                    </div>
-                    <div className="text-emerald-700 ml-7">{item.name}</div>
-                </div>
-                <div className="flex flex-wrap mt-3">
-                    <div className="flex flex-unwrap items-justify items-center capitalize text-emerald-700 font-bold w-18">
-                        <img src="./assets/balls/ball2.png" className="w-5.5 border-2 border-amber-500 rounded-full mt-0.5 mr-2"></img>
-                        <span className="w-20">Gender:</span>
-                    </div>
-                    <span className="text-emerald-700 ml-7">{item.gender}</span>
-                </div>
-                <div className="flex flex-wrap mt-3">
-                    <div className="flex flex-unwrap items-justify items-center capitalize text-emerald-700 font-bold w-18">
-                        <img src="./assets/balls/ball3.png" className="w-5.5 border-2 border-amber-500 rounded-full mt-0.5 mr-2"></img>
-                        <span className="w-20">Age:</span>
-                    </div>
-                    <span className="text-emerald-700 ml-7">{item.age}</span>
-                </div>
-                <div className="flex flex-wrap mt-3">
-                    <div className="flex flex-unwrap items-justify items-center capitalize text-emerald-700 font-bold w-18">
-                        <img src="./assets/balls/ball4.png" className="w-5.5 border-2 border-amber-500 rounded-full mt-0.5 mr-2"></img>
-                        <span className="w-20">Role:</span>
-                    </div>
-                    <span className="text-emerald-700 ml-7">{item.role}</span>
-                </div>
-                <div className="flex flex-wrap mt-4 mb-5">
+            <div className="bg-gray-400/30 text-white rounded-md px-7 overflow-hidden animateCustom border-emerald-600 border-b-3 border-t-3 max-w-96 max-h-70 max-md:hidden">
+                <SectionBox
+                    image="./assets/balls/ball1.png"
+                    text="Name:"
+                    name={item.name}
+                />
+                <SectionBox 
+                    image="./assets/balls/ball2.png"
+                    text="Gender:"
+                    name={item.gender}
+                />
+                <SectionBox 
+                    image="./assets/balls/ball3.png"
+                    text="Age:"
+                    name={item.age}
+                />
+                <SectionBox
+                    image="./assets/balls/ball4.png"
+                    text="Role:"
+                    name={item.role}
+                />
+                <section className="flex flex-wrap mt-4 mb-7">
                     <NavLink to={`/character/${item.name}`} className="flex flex-wrap items-justify items-center hover:underline text-black">
                         <img src="./assets/balls/balls-online.png" className="w-20"></img>
                         <span className="ml-3.5 w-50 text-emerald-700">+ Click for more info</span>
                     </NavLink>
-                </div>
+                </section>
             </div>
         </div>
     );
