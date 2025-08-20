@@ -1,0 +1,27 @@
+@keyframes delayedShow {
+    to {
+        visibility: visible;
+    }
+}
+
+.delayedShow{
+    visibility: hidden;
+    animation: 0s linear 0.5s forwards delayedShow ;
+}
+
+@keyframes animateright{
+    from {
+        right: -300px;
+        opacity: 0;
+    } 
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.animateCustom {
+    position: relative;
+    animation: animateright 1s;
+}

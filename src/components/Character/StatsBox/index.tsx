@@ -1,3 +1,5 @@
+import './module.css';
+
 type Character = {
     id          : string,
     name        : string,
@@ -13,11 +15,11 @@ interface SmallBoxProps {
     item : Character;
 }
 
-function CenterBox({ item }: SmallBoxProps) { 
+function StatsBox({ item }: SmallBoxProps) { 
     return (
         <div data-id={item.id} className="hidden flex-wrap items-center">
-            <img src={item.profile_img} alt={item.description} className={`w-auto ${item.height}`} />
-            <div className="bg-gray-400/30 text-white rounded-md px-7 overflow-hidden transition-all duration-750">
+            <img src={item.profile_img} alt={item.description} className={`w-auto ${item.height} delayedShow`} />
+            <div className="bg-gray-400/30 text-white rounded-md px-7 overflow-hidden animateCustom border-emerald-600 border-b-3 border-t-3 max-w-96 max-h-60">
                 <div className="flex flex-wrap mt-6">
                     <div className="flex flex-unwrap items-justify items-center capitalize text-emerald-700 font-bold w-18">
                         <img src="./assets/balls/ball1.png" className="w-5.5 border-2 border-amber-500 rounded-full mt-0.5 mr-2"></img>
@@ -55,4 +57,7 @@ function CenterBox({ item }: SmallBoxProps) {
         </div>
     );
 };
-export default CenterBox;
+
+
+
+export default StatsBox;
