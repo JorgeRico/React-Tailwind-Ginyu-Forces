@@ -8,8 +8,8 @@ type LayoutProps = {
 function Layout({ children }: LayoutProps) {
     return (
         <>
+            <Header />
             <main>
-                <Header />
                 <div className="bg-theme-image min-h-screen w-full flex items-center justify-center flex-col">
                     <div className="flex flex-wrap justify-center items-center w-full">
                         {children}

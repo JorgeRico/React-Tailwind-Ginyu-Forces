@@ -3,7 +3,7 @@ import Layout from './layout'
 import { Ginyu, Frieza, Recoome, Jeice, Guldo, Burter } from '../types/types';
 import CommonCharacter from './forces/common.tsx';
 import FriezaCharacter from './forces/frieza.tsx';
-import { NavLink } from 'react-router-dom';
+import Breadcrumb from './../components/Breadcrumb';
 
 function Character() {
     const { name } = useParams();
@@ -36,22 +36,16 @@ function Character() {
     return (
         <>
             <Layout>
-                <div className="mt-5 mb-5 flex justify-start items-center gap-1 px-10 py-3 w-5xl">
-                    <NavLink to="/" className="flex items-center gap-2 underline">
-                        <img className="h-5 font-light text-sm" src="../assets/header/logo_rounded.png" alt="Ginyu Forces" />
-                    </NavLink>
-                    /
-                    <NavLink to="/" className="flex items-center gap-2 underline">
-                        Home
-                    </NavLink>
-                </div>
-                <div className="mb-20 flex flex-wrap items-center justify-start gap-4 px-10 py-15 w-5xl bg-blue-200/30 rounded-md">
-                    {item && item.name !== 'Frieza' && 
-                        <CommonCharacter item={item}></CommonCharacter>
-                    }
-                    {item && item.name === 'Frieza' && 
-                        <FriezaCharacter item={item}></FriezaCharacter>
-                    }
+                <div className="min-h-screen w-full flex items-center justify-start flex-col">
+                    <Breadcrumb name={item.name}></Breadcrumb>
+                    <div className="mb-20 flex flex-wrap items-center justify-start gap-4 px-10 py-15 w-5xl bg-blue-200/30 rounded-md">
+                        {item && item.name !== 'Frieza' && 
+                            <CommonCharacter item={item}></CommonCharacter>
+                        }
+                        {item && item.name === 'Frieza' && 
+                            <FriezaCharacter item={item}></FriezaCharacter>
+                        }
+                    </div>
                 </div>
             </Layout>
         </>
