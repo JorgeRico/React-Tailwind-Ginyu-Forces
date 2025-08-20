@@ -26,7 +26,7 @@ function FriezaCharacter({ item }: CharacterProps) {
                 </div>
             </section>
             <section>
-                <h2 className="font-extrabold text-2xl mb-3">Apprearance</h2>
+                <h2 className="font-extrabold text-2xl mb-3 pb-2.5 border-b-neutral-500/30 border-b-2">Apprearance</h2>
                 {item.appearance.map((elem) => {
                     return (
                         <p className="mb-3">{elem}</p>
@@ -35,7 +35,7 @@ function FriezaCharacter({ item }: CharacterProps) {
             </section>
                     
             <section className="mb-5">
-                <h2 className="font-extrabold text-2xl mb-3">Personality</h2>
+                <h2 className="font-extrabold text-2xl mb-3 pb-2.5 border-b-neutral-500/30 border-b-2">Personality</h2>
                 {item.personality.map((elem) => {
                     return (
                         <p className="mb-3">{elem}</p>
@@ -45,7 +45,7 @@ function FriezaCharacter({ item }: CharacterProps) {
             
             {item.biography && item.biography.length > 0 &&
                 <section className="mb-5">
-                    <h2 className="font-extrabold text-2xl mb-3">Biography</h2>
+                    <h2 className="font-extrabold text-2xl mb-3 pb-2.5 border-b-neutral-500/30 border-b-2">Biography</h2>
                     {item.biography?.map((elem) => {
                         return (
                             <p className="mb-3">{elem}</p>
