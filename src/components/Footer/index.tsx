@@ -3,7 +3,7 @@ function Footer() {
         <>
             <div className="bg-black text-white p-10 w-full flex items-center justify-center flex-col">
                 <h2 className="mt-5 mb-15 text-3xl">Sponsors</h2>
-                <div className="flex flex-items justify-center w-auto gap-10 mb-15">
+                <div className="flex flex-wrap flex-items justify-center gap-10 mb-15 w-5xl max-md:w-full">
                     <img src="../assets/sponsors/yamcha.png" alt="Yamcha" className="h-20 mr-4 bg-white p-3" />
                     <img src="../assets/sponsors/capsulecorp.png" alt="Capsule Corp" className="h-20 mr-4 bg-white p-3" />
                     <img src="../assets/sponsors/ribbon.png" alt="Red Ribbon" className="h-20 mr-4 bg-white p-3" />

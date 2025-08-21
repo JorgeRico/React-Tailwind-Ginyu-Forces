@@ -7,7 +7,7 @@ function Contact() {
             <Layout>
                 <div className="min-h-screen w-full flex items-center justify-start flex-col">
                     <Breadcrumb name="Contact"></Breadcrumb>
-                    <div className="mb-20 px-10 py-10 w-5xl bg-blue-200/30 rounded-md top-20">
+                    <div className="mb-20 px-10 py-10 w-5xl bg-blue-200/30 rounded-md top-20 max-md:w-full">
                         <h1 className="mb-3 font-bold text-2xl">Contact us</h1>
                         <p className="mb-8">Explain us your plans and we talk on a coffe break</p>
                         <div className="w-1/2">

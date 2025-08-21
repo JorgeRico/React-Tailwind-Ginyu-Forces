@@ -38,7 +38,7 @@ function Character() {
             <Layout>
                 <div className="min-h-screen w-full flex items-center justify-start flex-col">
                     <Breadcrumb name={item.name}></Breadcrumb>
-                    <div className="mb-20 flex flex-wrap items-center justify-start gap-4 px-10 py-15 w-5xl bg-blue-200/30 rounded-md">
+                    <div className="mb-20 flex flex-wrap items-center justify-start gap-4 px-10 py-15 w-5xl bg-blue-200/30 rounded-md max-md:w-full">
                         {item && item.name !== 'Frieza' && 
                             <CommonCharacter item={item}></CommonCharacter>
                         }
