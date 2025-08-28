@@ -12,3 +12,16 @@
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url('/assets/namek.jpg');
 }
+
+header {    
+    animation: header-animation linear both; 
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+
+@keyframes header-animation{
+    to {
+        backdrop-filter: blur(5px);
+        opacity: 0.8;
+    }
+}
